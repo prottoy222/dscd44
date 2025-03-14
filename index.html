@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Watching App</title>
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ad Watching App</h1>
+        <h2>অ্যাড দেখুন এবং উপার্জন করুন</h2>
+        
+        <div class="progress-circle" id="progress-circle">0%</div>
+        <p>Watched Ads: <span id="watched-ads">0</span></p>
+        <p>Earned Points: <span id="earned-points">0.00</span></p>
+        
+        <button id="watch-ad-btn">Watch Ad</button>
+        <button id="join-btn">Join Now</button>
+        <button id="withdraw-btn">Withdraw</button>
+
+        <div id="withdraw-section" class="hidden">
+            <h3>Withdraw Funds</h3>
+            <input type="number" id="withdraw-amount" placeholder="Enter Amount">
+            <select id="payment-method">
+                <option value="Bkash">Bkash</option>
+                <option value="Nagad">Nagad</option>
+            </select>
+            <input type="text" id="phone-number" placeholder="Enter Your Number">
+            <button id="submit-withdraw">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
